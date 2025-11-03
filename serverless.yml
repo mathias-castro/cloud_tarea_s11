@@ -24,7 +24,6 @@ functions:
           method: get
           cors: true
           integration: lambda
-          authorizer: false
   lista_objetos_bucket:
     handler: lista_objetos_bucket.lambda_handler
     events:
@@ -33,7 +32,6 @@ functions:
           method: post
           cors: true
           integration: lambda
-          authorizer: false
   crear_bucket:
     handler: crear_bucket.lambda_handler
     events:
@@ -42,7 +40,6 @@ functions:
           method: post
           cors: true
           integration: lambda
-          authorizer: false
   crear_directorio:
     handler: crear_directorio.lambda_handler
     events:
@@ -51,7 +48,6 @@ functions:
           method: post
           cors: true
           integration: lambda
-          authorizer: false
   subir_archivo:
     handler: subir_archivo.lambda_handler
     events:
@@ -60,4 +56,3 @@ functions:
           method: post
           cors: true
           integration: lambda
-          authorizer: false
